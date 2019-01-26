@@ -1,0 +1,66 @@
+html{
+    scroll-behavior:smooth;
+}
+.pos{
+    position:fixed;
+    z-index: 1;
+    right:20;
+    top:20;
+}
+.im{
+position:absolute;
+height:180px;
+width:180px;
+}
+.img-anim{
+width:40px;
+height: 40px;
+transition: transform ease 0.1s;
+cursor: pointer;
+}
+.img-anim:hover{
+    transform: scale(2);
+}
+.pad{
+    padding:5px;
+}
+.pad-back{
+    padding:100px;
+}
+.dot{
+    position: absolute;
+    left:25;
+}
+.float{
+    position:fixed;
+    bottom:10;
+    right:10;
+    z-index:10;
+    cursor:pointer;
+    background-color: white;
+}
+.bad{
+    position: absolute;
+    left:21;
+}
+.adj{
+    left:-53;
+    top:-30;
+}
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-dark { color: #2196f3 }
+.pop{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+.pop:hover{
+    animation: anim 0.4s ease forwards;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+@keyframes anim{
+    50%{
+        transform: translateY(-10px);
+    }
+
+}
