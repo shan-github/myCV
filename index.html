@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans">
+
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 </head>
 
@@ -22,20 +24,24 @@
             <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
         </div>
         <div class="toast-body">
-            <b> Welcome to my CV</b><br>
-            Scroll down for more information
+            <b> Welcome to my CV</b>
+            <p class="text-secondary">Scroll down for more information</p>
         </div>
     </div>
-    <div class="bg-primary">
-        <div class=" bg-primary d-flex flex-row justify-content-md-center border pad-back">
-            <img class="rounded-circle bg-light im pad img-fluid" src="./img/my2.jpg">
+    <!-- Profile -->
+    <div class="d-flex justify-content-center mt-3">
+        <div>
+            <img class="rounded-circle shadow-sm p-1 im" src="./img/my2.jpg">
         </div>
     </div>
 
     <!--Container-->
-    <div class="container mt-5">
-        <div class="row d-flex justify-content-md-center align-items-md-center p-5">
-            <h2 class="text-dark text-center">Shantanu Bahuguna</h1>
+    <div class="container ">
+        <div class="row justify-content-center">
+            <div class="d-flex flex-column align-items-center p-5">
+                <h1 class="text-dark text-center hfont">Shantanu Bahuguna</h1>
+                <h4 class="text-secondary text-center hfont">शांतनु बहुगुणा</h4>
+            </div>
         </div>
 
         <!-- Row 1 -->
@@ -121,6 +127,9 @@
         </div>
         <!-- Row 3 -->
         <div class="row mt-2">
+            <div class="col-md-4">
+
+            </div>
             <div class="col-md-6" id="skills">
                 <div class="card shadow-sm">
                     <div class="card-body">
@@ -148,33 +157,41 @@
                             <span class="badge badge-pill border border-primary p-2 mr-2 mb-2">PHP</span>
                         </div>
                         <hr>
-                        <h5 class="card-title">Arts</h5>
-                        <div class="d-flex flex-column text-secondary pl-2">
-                            <p>Digital Arts</p>
-                            <p>Sketching</p>
+                        <div class="d-flex flex-wrap">
+                            <div class="flex-fill p-2">
+                                <h5 class="card-title">Arts</h5>
+                                <p>Digital Arts</p>
+                                <p>Sketching</p>
+                                <p>Animation</p>
+                                <p>Blender 3d</p>
+                            </div>
+                            <div class="flex-fill p-2">
+                                <h5 class="card-title">Hobbies</h5>
+                                <p>Football</p>
+                                <p>Cricket</p>
+                                <p>Drawing</p>
+                            </div>
+                            <div class="flex-fill p-2">
+                                <h5 class="card-title">Languages</h5>
+                                <p>English</p>
+                                <p>Hindi</p>
+                                <p>German</p>
+                                <p>Japanese</p>
+                            </div>
                         </div>
-                        <hr>
-                        <h5 class="card-title">Hobbies</h5>
-                        <div class="d-flex flex-column text-secondary pl-2">
-                            <p>Football</p>
-                            <p>Cricket</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
 
                     </div>
                 </div>
+            </div>
+            <div class="col-md-2">
+
             </div>
         </div>
         <!-- Row 4 -->
         <div class="row mt-2" id="project">
             <div class="col-md-1"></div>
             <div class="col-md-10">
-                <div class="card shadow-sm text-dark pl-5 pt-4 pb-2">
+                <div class="card shadow-sm text-dark pl-5 pt-5 pb-2">
 
                     <div class="card-body border-left border-primary">
 
@@ -186,7 +203,11 @@
                             <div class="card-text d-flex flex-column mt-3 ml-5 pl-3">
                                 <span class="badge badge-primary p-2 bad">1</span>
                                 <strong class="text-primary mb-3">NU STUDENT</strong>
-                                <img src="./img/erp1.png" class="img-anim">
+                                <div class="d-flex flex-row">
+                                    <img src="./img/erp1.png" class="img-anim rounded-circle">
+                                    <img src="./img/node.png" class="img-anim ml-1">
+                                    <img src="./img/react.png" class="img-anim rounded-circle ml-1">
+                                </div>
                                 <strong class="p-2 text-dark">The all in one university app that includes features
                                     like
                                     <ul>
@@ -220,6 +241,7 @@
                                 <strong class="text-primary mb-3">Amazon Web Service IOT</strong>
                                 <div class="d-flex flex-row">
                                     <img src="./img/aws.jpg" class="img-anim rounded-circle">
+                                    <img src="./img/mong.png" class="img-anim rounded-circle ml-1">
                                     <img src="./img/and.svg" class="img-anim">
                                 </div>
                                 <strong class="mb-2 p-2 text-dark">This project is all about data circulation from IOT
@@ -256,17 +278,93 @@
                             </div>
                             <div class="card-text d-flex flex-column mt-5 ml-5 pl-3">
                                 <span class="badge badge-primary p-2 bad">3</span>
+                                <strong class="text-primary mb-3">Quiz System</strong>
+                                <div class="d-flex flex-row">
+                                    <img src="./img/ser.png" class="img-anim rounded-circle">
+                                    <img src="./img/jsp.png" class="img-anim">
+                                    <img src="./img/html.png" class="img-anim">
+                                </div> <strong class="p-2"></strong>
+                                <div class="mb-2 d-flex">
+                                    <ion-icon class="text-primary" name="calendar" size="large"></ion-icon>
+                                    <p class="mt-1 ml-2 text-primary">August 2018 - November 2018</p>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">Tools Used</li>
+                                    <li class="list-group-item">Servlet</li>
+                                    <li class="list-group-item">JSP</li>
+                                    <li class="list-group-item">HTML 5</li>
+                                    <li class="list-group-item">CSS</li>
+                                    <li class="list-group-item">Eclipse IDE</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge badge-pill badge-primary">Project Links</span>
+                                    <a href="https://github.com/shan-github/quiz_system" target="_blank">Github</a>
+                                </div>
+                            </div>
+                            <div class="card-text d-flex flex-column mt-5 ml-5 pl-3">
+                                <span class="badge badge-primary p-2 bad">4</span>
+                                <strong class="text-primary mb-3">Gingerly</strong>
+                                <div class="d-flex flex-row">
+                                    <img src="./img/maps.png" class="img-anim rounded-circle">
+                                    <img src="./img/fire.png" class="img-anim rounded-circle">
+                                </div> <strong class="p-2"></strong>
+                                <div class="mb-2 d-flex">
+                                    <ion-icon class="text-primary" name="calendar" size="large"></ion-icon>
+                                    <p class="mt-1 ml-2 text-primary">May 2018 - June 2018</p>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">Tools Used</li>
+                                    <li class="list-group-item">Android Studio</li>
+                                    <li class="list-group-item">Google Maps API</li>
+                                    <li class="list-group-item">Firebase</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge badge-pill badge-primary">Project Links</span>
+                                    <a href="https://github.com/shan-github/gingerly" target="_blank">Github</a>
+                                </div>
+                            </div>
+                            <div class="card-text d-flex flex-column mt-5 ml-5 pl-3">
+                                <span class="badge badge-primary p-2 bad">5</span>
+                                <strong class="text-primary mb-3">TF AI</strong>
+                                <div class="d-flex flex-row">
+                                    <img src="./img/tf.jpg" class="img-anim rounded-circle">
+                                    <img src="./img/andstu.png" class="img-anim rounded-circle">
+                                </div> <strong class="p-2"></strong>
+                                <div class="mb-2 d-flex">
+                                    <ion-icon class="text-primary" name="calendar" size="large"></ion-icon>
+                                    <p class="mt-1 ml-2 text-primary">May 2018 - June 2018</p>
+                                </div>
+                                <ul class="list-group">
+                                    <li class="list-group-item active">Tools Used</li>
+                                    <li class="list-group-item">Android Studio</li>
+                                    <li class="list-group-item">TensorFlow API</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="badge badge-pill badge-primary">Project Links</span>
+                                    <a href="https://github.com/shan-github/tfappai" target="_blank">Github</a>
+                                </div>
+                            </div>
+                            <div class="card-text d-flex flex-column mt-5 ml-5 pl-3">
+                                <span class="badge badge-primary p-2 bad">6</span>
                                 <strong class="text-primary mb-3">NU ERP</strong>
                                 <img src="./img/erp.png" class="img-anim">
                                 <strong class="p-2">For the sake of making tedious task, like management
                                     specifically for students, easy, this app provides a way to do that.</strong>
+                                <div class="mb-2 d-flex">
+                                    <ion-icon class="text-primary" name="calendar" size="large"></ion-icon>
+                                    <p class="mt-1 ml-2 text-primary">March 2018 - May 2018</p>
+                                </div>
                                 <ul class="list-group ">
                                     <li class="list-group-item active">Tools Used</li>
                                     <li class="list-group-item">Android Studio</li>
-                                    <li class="list-group-item">XML</li>
                                     <li class="list-group-item">My SQL</li>
                                 </ul>
+                                <div class="mt-3">
+                                    <span class="badge badge-pill badge-primary">Project Links</span>
+                                    <a href="https://github.com/shan-github/NUERP" target="_blank">Github</a>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -289,8 +387,9 @@
     $(document).ready(function () {
         $('.toast').toast('show');
     });
-    function home(){
-        location.href='#'
+
+    function home() {
+        location.href = '#'
     }
 </script>
 
